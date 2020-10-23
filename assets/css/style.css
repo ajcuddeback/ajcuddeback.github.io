@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Neon;
+    src: url(../fonts/Neoneon.otf) format("opentype");
+}
+* {
+    margin: 0;
+}
+:root {
+    --background: black;
+    --neon-green: rgb(11, 255, 3);
+    --neon-red: #fe0000;
+}
+body {
+    background-color: var(--background);
+    color: var(--neon-green);
+    font-family: Neon;
+}
