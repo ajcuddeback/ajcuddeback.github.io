@@ -145,7 +145,7 @@ header nav ul li a {
     box-shadow: 2px 2px 15px 2px var(--neon-red);
     transition: 1s;
 }
-.about-content-wrapper p {
+.about-content-wrapper h3 {
     font-size: 25px;
     line-height: 125%;
     width: 30%;
