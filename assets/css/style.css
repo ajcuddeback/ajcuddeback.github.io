@@ -6,13 +6,13 @@
     margin: 0;
 }
 :root {
-    --background: black;
+    --background: rgb(3, 0, 0);
     --neon-green: rgb(11, 255, 3);
     --neon-red: #fe0000;
 }
 body {
     background-color: var(--background);
-    color: var(--neon-green);
+    color: var(--neon-red);
     font-family: Neon;
 }
 
@@ -50,21 +50,27 @@ header {
 
 }
 header h1 {
-    border: 2px solid var(--neon-green);
+    border: 2px solid var(--neon-red);
     padding-top: 5px;
     padding-left: 3px;
     border-radius: 5px;
     font-size: 55px;
-    text-shadow: 1px 1px var(--neon-green);
-    animation: headGlow 4s;
+    text-shadow: 1px 1px var(--neon-red);
+    animation: headGlow 5s;
+    box-shadow: 2px 2px 15px 1px var(--neon-red);
 }
 
 /*Navigation*/
 header a {
     text-decoration: none;
-    color: var(--neon-green);
+    color: var(--neon-red);
 }
+header a:hover {
+    box-shadow: 2px 2px 15px 1px var(--neon-red);
+    transition: 1s;
+} 
 header nav ul {
+    margin-top: 23px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -76,16 +82,32 @@ header nav ul li a {
     font-size: 1.55rem;
 }
 .border {
-    border-right: 1px solid var(--neon-green);
+    border-right: 1px solid var(--neon-red);
 }
 
 /* Hero Section */
 .hero {
     background-attachment: fixed;
     background-position: center;
-    background-image: url(../Images/heroImg-1.jpg);
+    background-image: url(../Images/heroimg-red.jpg);
     background-size: cover;
 }
 .hero div {
+    text-align: center;
     height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
+.quote h2{
+    width: 35%;
+    margin-bottom: 20px;
+}
+.quote h2 span {
+    display: block;
+    margin-top: 10px;
+}
+
+/* About Me Section */
+
