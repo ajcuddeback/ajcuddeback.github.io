@@ -123,7 +123,8 @@ header nav ul li a {
     font-size: 3rem;
     width: 20%;
     text-align: center;
-    margin: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     border-bottom: 1px solid var(--neon-red);
 }
 .about-content-wrapper {
@@ -174,9 +175,7 @@ header nav ul li a {
     justify-content: flex-start;
     align-items: flex-end;
     text-decoration: none;
-    border: 2px solid var(--neon-red);
-    padding: 3px;
-    border-radius: 5px;
+    box-shadow: 2px 2px 15px 2px var(--neon-red);
 }
 .works div p {
     font-size: 20px;
@@ -221,3 +220,31 @@ header nav ul li a {
     margin-top: 100px;
 }
 
+/* Contact Me Section */
+.contact {
+    width: 100%;
+}
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-wrapper p {
+    font-size: 30px;
+    padding-right: 200px;
+}
+.contact-wrapper p a{
+    text-decoration: none;
+    color: var(--neon-red);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 50px;
+    border-top: 5px solid var(--neon-red);
+    margin-top: 5px;
+}
+footer p {
+    font-size: 25px;
+}
