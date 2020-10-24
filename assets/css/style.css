@@ -163,16 +163,15 @@ header nav ul li a {
 .grid-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-     width: 75%;  
+    grid-template-rows: 400px repeat(1, 200px);
+    width: 75%;  
     justify-items: center;
-    grid-gap: 15px;
-    position: relative;
+    grid-gap: 30px;
+
     
 }
 .works {
     display: flex;
-    justify-content: flex-start;
     align-items: flex-end;
     text-decoration: none;
     box-shadow: 2px 2px 15px 2px var(--neon-red);
@@ -191,8 +190,7 @@ header nav ul li a {
     width: 100%;
 }
 .runBuddy {
-    width: 90%;
-    height: 120%;
+    width: 100%;
     grid-column: 1 / span 3;
     background-image: url("../Images/run-buddy.jpg");
     background-size: cover;
@@ -201,23 +199,18 @@ header nav ul li a {
     background-image: url("../Images/Horiseon.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 100px;
-    height: 350px;
     width: 70%;
 }
 .jsClock {
     background-image: url("../Images/javaScript-clock.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 100px;
-    height: 350px;
+    
     width: 70%;
 }
 .comingSoon {
     background-image: url(https://via.placeholder.com/350x350.png?text=Coming+Soon);
-    height: 350px;
     width: 70%;
-    margin-top: 100px;
 }
 
 /* Contact Me Section */
@@ -247,4 +240,108 @@ footer {
 }
 footer p {
     font-size: 25px;
+}
+
+/* Media Querry for small laptops/ Ipad pro */
+@media screen and (max-width: 1025px) {
+    header{
+        justify-content: center;
+    }
+    .main-titles {
+        font-size: 2.8rem;
+    }
+    .about-content-wrapper p {
+        font-size: 20px;
+    }
+    .grid-content {
+        grid-template: 300px repeat(3, 250px) / 1fr;
+        grid-gap: 20px;
+    }
+    .runBuddy div p {
+        font-size: 20px;
+        width: 100%;
+    }
+    .runBuddy {
+        background-position: inherit;
+    }
+    .Horiseon {
+        width: 100%;
+        grid-column: 1 / span 3;
+        background-image: url("../Images/Horiseon.jpg");
+        background-size: cover;
+        background-position: inherit;
+    }
+    .jsClock {
+        width: 100%;
+        grid-column: 1 / span 3;
+        background-image: url("../Images/javaScript-clock.jpg");
+        background-size: cover;
+    }
+    .comingSoon {
+        width: 100%;
+        grid-column: 1 / span 3;
+        background-image: url(https://via.placeholder.com/350x350.png?text=Coming+Soon);
+        background-size: cover;
+        background-position: center;
+    }
+    .contact-wrapper p {
+        padding-right: 50px;
+    }
+    .about-content-wrapper img {
+        box-shadow: 2px 2px 15px 2px var(--neon-red);
+    }
+}
+
+/* Media Querry for ipad and small tablets */
+@media screen and (max-width: 769px) {
+    .about-content-wrapper p {
+        font-size: 15px;
+    }
+    .contact-wrapper p {
+        padding-right: 28px;
+    }
+}
+/* Media Querry for phones */
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        padding: 3px 8px;
+        font-size: 1.2rem;
+    }
+    .quote h2 {
+        font-size: 1.2rem;
+        width: 50%;
+    }
+    .main-titles {
+        font-size: 1.5rem;
+    }
+    .about-content-wrapper img {
+        width: 40%;
+        box-shadow: 2px 2px 15px 2px var(--neon-red);
+        margin-right: 10px;
+    }
+    .about-content-wrapper p {
+        font-size: 10px;
+    }
+    .contact-wrapper p {
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    footer {
+        padding: 25px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+
+}
+
+/* Media Querry for iphone 6 and smaller devices */
+@media screen and (max-width: 376px) {
+    header h1 {
+        font-size: 40px;
+    }
+    header nav ul li a {
+        padding: 4px 8px;
+        font-size: .83rem;
+    }
 }
