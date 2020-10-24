@@ -103,6 +103,11 @@ header nav ul li a {
 .quote h2{
     width: 35%;
     margin-bottom: 20px;
+    background-color: var(--background);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--neon-red);
+    margin-bottom: 50px;
 }
 .quote h2 span {
     display: block;
@@ -110,4 +115,41 @@ header nav ul li a {
 }
 
 /* About Me Section */
+.title-flex {
+    display: flex;
+    justify-content: center;
+}
+.about h2 {
+    font-size: 3rem;
+    width: 20%;
+    text-align: center;
+    margin: 40px;
+    border-bottom: 1px solid var(--neon-red);
+}
+.about-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    /* background-color: #fe0000; */
+}
+.about-content-wrapper img {
+    width: 25%;
+    margin-left: 15%;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.about-content-wrapper img:hover {
+    box-shadow: 2px 2px 15px 2px var(--neon-red);
+    transition: 1s;
+}
+.about-content-wrapper p {
+    font-size: 25px;
+    line-height: 125%;
+    width: 30%;
+    margin-top: 30px;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
 
