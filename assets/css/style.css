@@ -208,9 +208,10 @@ header nav ul li a {
     
     width: 70%;
 }
-.comingSoon {
-    background-image: url(https://via.placeholder.com/350x350.png?text=Coming+Soon);
+.pw {
+    background-image: url("../Images/Screen-shot.png");
     width: 70%;
+    background-size: cover;
     background-position: center;
 }
 
@@ -279,10 +280,10 @@ footer p {
         background-image: url("../Images/javaScript-clock.jpg");
         background-size: cover;
     }
-    .comingSoon {
+    .pw {
         width: 100%;
         grid-column: 1 / span 3;
-        background-image: url(https://via.placeholder.com/350x350.png?text=Coming+Soon);
+        background-image: url("../Images/Screen-shot.png");
         background-size: cover;
         background-position: center;
     }
