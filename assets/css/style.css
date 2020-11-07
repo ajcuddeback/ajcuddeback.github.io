@@ -185,18 +185,18 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-.runBuddy div p {
+.coding-quiz div p {
     font-size: 30px;
     width: 100%;
 }
-.runBuddy {
+.coding-quiz {
     width: 100%;
     grid-column: 1 / span 3;
-    background-image: url("../Images/run-buddy.jpg");
+    background-image: url("../Images/screencapture-127-0-0-1-5501-index-html-2020-11-06-18_28_47.png");
     background-size: cover;
 }
-.Horiseon {
-    background-image: url("../Images/Horiseon.jpg");
+.taskinator {
+    background-image: url("../Images/Taskinator.png");
     background-size: cover;
     background-position: center;
     width: 70%;
@@ -208,9 +208,10 @@ header nav ul li a {
     
     width: 70%;
 }
-.comingSoon {
-    background-image: url(https://via.placeholder.com/350x350.png?text=Coming+Soon);
+.pw {
+    background-image: url("../Images/Screen-shot.png");
     width: 70%;
+    background-size: cover;
     background-position: center;
 }
 
@@ -252,24 +253,24 @@ footer p {
         font-size: 2.8rem;
         margin-top: 80px;
     }
-    .about-content-wrapper p {
+    .about-content-wrapper h3 {
         font-size: 20px;
     }
     .grid-content {
         grid-template: 300px repeat(3, 250px) / 1fr;
         grid-gap: 20px;
     }
-    .runBuddy div p {
+    .coding-quiz div p {
         font-size: 20px;
         width: 100%;
     }
-    .runBuddy {
+    .coding-quiz {
         background-position: inherit;
     }
-    .Horiseon {
+    .taskinator {
         width: 100%;
         grid-column: 1 / span 3;
-        background-image: url("../Images/Horiseon.jpg");
+        background-image: url("../Images/Taskinator.png");
         background-size: cover;
         background-position: inherit;
     }
@@ -279,10 +280,10 @@ footer p {
         background-image: url("../Images/javaScript-clock.jpg");
         background-size: cover;
     }
-    .comingSoon {
+    .pw {
         width: 100%;
         grid-column: 1 / span 3;
-        background-image: url(https://via.placeholder.com/350x350.png?text=Coming+Soon);
+        background-image: url("../Images/Screen-shot.png");
         background-size: cover;
         background-position: center;
     }
@@ -296,7 +297,7 @@ footer p {
 
 /* Media Querry for ipad and small tablets */
 @media screen and (max-width: 769px) {
-    .about-content-wrapper p {
+    .about-content-wrapper h3 {
         font-size: 15px;
     }
     .contact-wrapper p {
@@ -321,7 +322,7 @@ footer p {
         box-shadow: 2px 2px 15px 2px var(--neon-red);
         margin-right: 10px;
     }
-    .about-content-wrapper p {
+    .about-content-wrapper h3 {
         font-size: 10px;
     }
     .contact-wrapper p {
@@ -343,6 +344,7 @@ footer p {
     header h1 {
         font-size: 40px;
     }
+
     header nav ul li a {
         padding: 4px 8px;
         font-size: .83rem;
