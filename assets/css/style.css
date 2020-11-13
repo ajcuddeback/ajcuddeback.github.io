@@ -2,6 +2,9 @@
     font-family: Neon;
     src: url(../fonts/Neoneon.otf) format("opentype");
 }
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
 }
