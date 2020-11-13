@@ -7,6 +7,7 @@
         <title>ajcuddeback</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
@@ -17,8 +18,8 @@
             <h1><a href="/index.html">AustinWebDev</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#about" class="border">About Me</a></li>
-                    <li><a href="#work" class="border">My Work</a></li>
+                    <li><a href="#about" class="red-border">About Me</a></li>
+                    <li><a href="#work" class="red-border">My Work</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -35,16 +36,21 @@
                 <div class="title-flex">
                     <h2 class="main-titles">About Me</h2>
                 </div>
-                
-                <div class="about-content-wrapper">
-                    <img src="./assets/Images/Head-shot.jpg" alt="Photo of Austin Cuddeback sitting on a bench">
-                    <div class="download-button-wrapper">
-                       <h3>Hello, my name is Austin Cuddeback and I am a Full-Stack Web Developer student attending at UCF Coding Bootcamp. I have studied HTML and CSS on and off for 7 years and have made the career choice to become a full-stack web developer. I am excited to begin working and joining the incredible coding community!</h3>
-                       <h3>Click to download my resume!</h3>
-                       <form method="get" action="./assets/PDF's/Austin's-Resume.pdf" target="_blank" class="download-button-container">
-                           <button class="btn"><i class="fa fa-download"></i> Download</button>
-                       </form>
-                    </div>
+                <div class="container"></div>
+                        <div class="about-content-wrapper row">
+                            <div class="col-12 col-md-5">
+                                <img src="./assets/Images/Head-shot.jpg" alt="Photo of Austin Cuddeback sitting on a bench" class="float-right img-responsive">
+                            </div>
+                            <div class="download-button-wrapper row col-12 col-md-4">
+                            <h3>Hello, my name is Austin Cuddeback and I am a Full-Stack Web Developer student attending at UCF Coding Bootcamp. I have studied HTML and CSS on and off for 7 years and have made the career choice to become a full-stack web developer. I am excited to begin working and joining the incredible coding community!</h3>
+                            <div class="col-12">
+                                <h3>Click to download my resume!</h3>
+                            </div>
+                                <form method="get" action="./assets/PDF's/Austin's-Resume.pdf" target="_blank" class="download-button-container">
+                                    <button class="btn"><i class="fa fa-download"></i> Download</button>
+                                </form>
+                            </div>
+                        </div>
                 </div>
             </article>
         </section>
@@ -88,9 +94,22 @@
                 <h2 class="main-titles">Contact Me</h2>
             </div>
             <div class="contact-wrapper">
-                <p class="border">863.245.3982</p>
-                <p class="border"><a href="mailto:ajcuddeback@gmail.com">ajcuddeback@gmail.com</a></p>
-                <p><a href="https://github.com/ajcuddeback" target="_blank">GitHub</a></p>
+                
+
+                <form action="https://formspree.io/f/mvovqazn" method="POST">
+                <label>
+                  Your email:
+                  <input type="text" name="_replyto">
+                </label>
+                <label>
+                  Your message:
+                  <textarea name="message"></textarea>
+                </label>
+              
+                <!-- your other form fields go here -->
+              
+                <button type="submit">Send</button>
+              </form>
             </div>
         </section>
 
