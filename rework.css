@@ -9,35 +9,49 @@
     --silver: #C5C6C7;
     --neon-blue: #66FCF1;
     --blue: #45A29E;
-  }
-  body {
+}
+body {
     background-color: var(--bgcolor);
     color: var(--silver);
-  }
-  .my-name {
+}
+
+header {
+    height: 100vh;
+}
+.my-name {
     height: 100vh;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .my-name i {
+}
+.my-name i {
     font-size: 30px;
     color: var(--neon-blue);
     position: relative;
     top: 0;
     transition: top .3s ease-in-out
-  }
-  .my-name i:hover {
+}
+.my-name i:hover {
     top: 10px;
-  }
-  .my-name button {
-      position: relative;
-      top: 42vh;
-      background-color: var(--bgcolor);
-      border: none;
-      outline: none;
-  }
-  h1 {
+}
+.my-name button {
+    position: relative;
+    top: 42vh;
+    background-color: var(--bgcolor);
+    border: none;
+    outline: none;
+}
+.my-name h3 {
+    position: relative;
+    top: 40vh;
     color: var(--neon-blue);
-  }
+}
+.my-name h1 {
+    color: var(--neon-blue);
+    font-size: 3rem;
+}
+
+main {
+    height: 100vh;
+}
