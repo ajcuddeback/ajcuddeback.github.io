@@ -371,20 +371,17 @@ footer p {
     .sub-work1 {
         width: 100%;
         grid-column: 1 / span 3;
-        background-image: url("../Images/Taskinator.png");
         background-size: cover;
         background-position: inherit;
     }
     .sub-work2 {
         width: 100%;
         grid-column: 1 / span 3;
-        background-image: url("../Images/javaScript-clock.jpg");
         background-size: cover;
     }
     .sub-work3 {
         width: 100%;
         grid-column: 1 / span 3;
-        background-image: url("../Images/work-scheduler-screenshot.png");
         background-size: cover;
         background-position: center;
     }
