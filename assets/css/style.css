@@ -2,20 +2,99 @@
     font-family: Neon;
     src: url(../fonts/Neoneon.otf) format("opentype");
 }
+/* Add smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
+/* Get rid of default browser styling */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+/* Root Colors */
 :root {
     --background: rgb(3, 0, 0);
-    --neon-green: rgb(11, 255, 3);
-    --neon-red: #fe0000;
+    --silver: #C5C6C7;
+    --neon-blue:#43d3fe;
 }
 body {
     background-color: var(--background);
-    color: var(--neon-red);
+    color: var(--blue);
+}
+/* Hides any overflow */
+main {
+    overflow: hidden;
+}
+/* Intro animation */
+#canvas1 {
+    position: fixed;
+    width: 100%;
+    height: 150vh;
+}
+.intro {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.intro h1 {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 45vh;
+    animation: headingUp 1.2s .3s forwards;
+}
+@keyframes headingUp {
+    from{
+        top: 45vh;
+    }
+    to {
+        top: 40vh;
+    }
+}
+.blocking {
+    position: fixed;
+    top: 45vh;
+    background-color:  rgb(3, 0, 0);
+    width: 1400px;
+    height: 2.9rem;
+}
+.intro {
+    background-color: var(--background);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    animation: moveIntro 2s 3.9s forwards;
+}
+@keyframes moveIntro {
+    from {
+        opacity: 1;
+         transform: translateX(0px);
+    }
+    to {
+         opacity: 0; 
+        transform: translateX(3000px); 
+    }
+}
+.my-name {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name h1 {
+    color: var(--neon-blue);
+    font-size: 3rem;
+}
+
+/* Main Content pushed to back */
+.main-content {
+    position: absolute;
+    z-index: -1;
 }
 
 /* header */
@@ -53,25 +132,25 @@ header {
 
 }
 header h1 {
-    border: 2px solid var(--neon-red);
+    border: 2px solid var(--blue);
     padding-top: 5px;
     padding-left: 3px;
     border-radius: 5px;
     font-size: 55px;
-    text-shadow: 1px 1px var(--neon-red);
-    animation: headGlow 5s;
-    box-shadow: 2px 2px 15px 1px var(--neon-red);
+    text-shadow: 1px 1px var(--blue);
+    animation: headGlow 5s 3.6s;
+    box-shadow: 2px 2px 15px 1px var(--blue);
 }
 
 /*Navigation*/
 header a {
     text-decoration: none;
-    color: var(--neon-red);
+    color: var(--blue);
 }
 header a:hover {
-    box-shadow: 2px 2px 15px 1px var(--neon-red);
+    box-shadow: 2px 2px 15px 1px var(--blue);
     transition: 1s;
-    color: var(--neon-red)
+    color: var(--blue)
 } 
 header nav ul {
     margin-top: 23px;
@@ -86,14 +165,14 @@ header nav ul li a {
     font-size: 1.55rem;
 }
 .red-border {
-    border-right: 1px solid var(--neon-red);
+    border-right: 1px solid var(--blue);
 }
 
 /* Hero Section */
 .hero {
     background-attachment: fixed;
     background-position: center;
-    background-image: url(../Images/heroimg-red.jpg);
+    background-image: url(../Images/hero-img-blue.jpg);
     background-size: cover;
 }
 .hero div {
@@ -110,7 +189,7 @@ header nav ul li a {
     background-color: var(--background);
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid var(--neon-red);
+    border: 1px solid var(--blue);
     margin-bottom: 50px;
 }
 .quote h2 span {
@@ -130,7 +209,7 @@ header nav ul li a {
     text-align: center;
     margin-top: 150px;
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--neon-red);
+    border-bottom: 1px solid var(--blue);
 }
 .about-content-wrapper img {
     width: 50%;
@@ -138,7 +217,7 @@ header nav ul li a {
     transition: all 0.5s ease-in-out;
 }
 .about-content-wrapper img:hover {
-    box-shadow: 2px 2px 15px 2px var(--neon-red);
+    box-shadow: 2px 2px 15px 2px var(--blue);
     transition: 1s;
 }
 .about-content-wrapper h3 {
@@ -146,7 +225,7 @@ header nav ul li a {
     line-height: 125%;
 }
 .btn {
-    background-color: red;
+    background-color: var(--blue);
     width: 150px;
 }
 
@@ -170,18 +249,16 @@ header nav ul li a {
     display: flex;
     align-items: flex-end;
     text-decoration: none;
-    box-shadow: 2px 2px 15px 2px var(--neon-red);
+    box-shadow: 2px 2px 15px 2px var(--blue);
 }
-
 .works div p {
     font-size: 20px;
     text-decoration: none;
-    color: var(--neon-red);
+    color: var(--blue);
     background-color: var(--background);
     padding: 10px;
     border-radius: 5px;
 }
-
 .main-work div p {
     font-size: 30px;
     width: 100%;
@@ -189,17 +266,17 @@ header nav ul li a {
 .main-work {
     width: 100%;
     grid-column: 1 / span 3;
-    background-image: url("../Images/screencapture-127-0-0-1-5501-index-html-2020-11-06-18_28_47.png");
+    background-image: url("../Images/explore-outdoors.png");
     background-size: cover;
 }
 .sub-work1 {
-    background-image: url("../Images/Taskinator.png");
+    background-image: url("../Images/screencapture-127-0-0-1-5501-index-html-2020-11-06-18_28_47.png");
     background-size: cover;
     background-position: center;
     width: 70%;
 }
 .sub-work2 {
-    background-image: url("../Images/javaScript-clock.jpg");
+    background-image: url("../Images/weather-app.png");
     background-size: cover;
     background-position: center;
     
@@ -230,7 +307,7 @@ input[type=text], textarea {
 }
 button[type=submit] {
     width: 100%;
-  background-color: var(--neon-red);
+  background-color: var(--blue);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -241,17 +318,35 @@ button[type=submit] {
 
 /* Footer */
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 30px;
-    border-top: 5px solid var(--neon-red);
+    border-top: 5px solid var(--blue);
     margin-top: 20px;
+}
+.top-footer-content {
+    margin-bottom: 10px;
+}
+.top-footer-content a {
+    margin-right: 7px;
 }
 footer p {
     font-size: 25px;
 }
-
+.main-content {
+    overflow: hidden;
+}
 /* Media Querry for small laptops/ Ipad pro */
 @media screen and (max-width: 1025px) {
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+    .blocking {
+        height: 1.9rem;
+        width: 1000px;
+    }
     header{
         justify-content: center;
     }
@@ -294,12 +389,15 @@ footer p {
         background-position: center;
     }
     .about-content-wrapper img {
-        box-shadow: 2px 2px 15px 2px var(--neon-red);
+        box-shadow: 2px 2px 15px 2px var(--blue);
     }
 }
 
 /* Media Querry for ipad and small tablets */
 @media screen and (max-width: 769px) {
+    .intro h1 {
+        font-size: 1.1rem;
+    }
     .about-content-wrapper h3 {
         font-size: 15px;
     }
@@ -314,6 +412,7 @@ footer p {
 }
 /* Media Querry for phones */
 @media screen and (max-width: 575px) {
+
     header nav ul li a {
         padding: 3px 8px;
         font-size: 1.2rem;
@@ -327,10 +426,11 @@ footer p {
     }
     .about-content-wrapper {
         justify-content: center;
+        margin: 0 auto;
     }
     .about-content-wrapper img {
         width: 50%;
-        box-shadow: 2px 2px 15px 2px var(--neon-red);
+        box-shadow: 2px 2px 15px 2px var(--blue);
         margin-right: 10px;
     }
     .about-content-wrapper h3 {
@@ -365,6 +465,12 @@ footer p {
 
 }
 @media screen and (max-width: 500px) {
+    .intro h1 {
+        font-size: .8rem;
+    }
+    .blocking {
+        width: 455px;
+    }
     .about-content-wrapper h3 {
         font-size: 10px;
         width: 70%;
@@ -375,6 +481,9 @@ footer p {
 }
 /* Media Querry for iphone 6 and smaller devices */
 @media screen and (max-width: 412px) {
+    .intro h1 {
+        font-size: .7rem;
+    }
     header h1 {
         font-size: 40px;
     }
@@ -389,5 +498,12 @@ footer p {
     }
     .btn {
         margin-left: 25%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .my-name > h1 {
+        font-size: 2rem;
+        padding: 10px;
+        word-break: break-all;
     }
 }

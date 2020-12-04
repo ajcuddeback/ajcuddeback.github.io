@@ -1,15 +1,17 @@
 # AustinWebDevs
 AustinWebDevs is Austin Cuddeback's web portfolio. Here you will be able to see all of Austin's current public projects and skills
-##Table of Contents
+
+## Table of Contents
 - [Built With](#built-with)
 - [Features](#features)
 - [Website](#website)
 
-##Built With
+## Built With
 * HTML
 * CSS
+* JS
 
-##Features
+## Features
 * Mobile Firendly
 * Animations
 * Transitons
