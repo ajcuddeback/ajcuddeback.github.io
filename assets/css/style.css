@@ -5,6 +5,7 @@
 /* Add smooth scrolling */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 /* Get rid of default browser styling */
 * {
@@ -224,7 +225,7 @@ header nav ul li a {
     font-size: 25px;
     line-height: 125%;
 }
-.btn {
+  .btn {
     background-color: var(--blue);
     width: 150px;
 }
@@ -335,9 +336,7 @@ footer {
 footer p {
     font-size: 25px;
 }
-.main-content {
-    overflow: hidden;
-}
+
 /* Media Querry for small laptops/ Ipad pro */
 @media screen and (max-width: 1025px) {
     .intro h1 {
@@ -390,7 +389,7 @@ footer p {
     }
 }
 
-/* Media Querry for ipad and small tablets */
+/* Media Querry for phones */
 @media screen and (max-width: 769px) {
     .intro h1 {
         font-size: 1.1rem;
@@ -405,11 +404,6 @@ footer p {
     input[type=text], textarea {
     width: 300px;
     }
-    
-}
-/* Media Querry for phones */
-@media screen and (max-width: 575px) {
-
     header nav ul li a {
         padding: 3px 8px;
         font-size: 1.2rem;
@@ -434,13 +428,10 @@ footer p {
         font-size: 10px;
     }
     .download-button-wrapper {
-        width: 70%;
+        max-width: 50%;
         text-align: center;
-        margin-left: 25%;
     }
-    .btn {
-        margin-left: 35%;
-    }
+    
     .about-content-wrapper img {
         margin-right: 25%;
         margin-bottom: 10px;
@@ -470,10 +461,6 @@ footer p {
     }
     .about-content-wrapper h3 {
         font-size: 10px;
-        width: 70%;
-    }
-    .btn {
-        margin-left: 70%;
     }
 }
 /* Media Querry for iphone 6 and smaller devices */
@@ -490,22 +477,14 @@ footer p {
         font-size: .83rem;
     }
 
-    .download-button-wrapper {
-        width: 90%;
-    }
-    .btn {
-        margin-left: 35%;
-    }
+    /* .download-button-wrapper {
+        max-width: 50%;
+    } */
 }
 @media screen and (max-width: 450px) {
     .my-name > h1 {
         font-size: 2rem;
         padding: 10px;
         word-break: break-all;
-    }
-}
-@media screen and (max-width: 390px) {
-    .btn {
-        margin-left: 26%;
     }
 }
