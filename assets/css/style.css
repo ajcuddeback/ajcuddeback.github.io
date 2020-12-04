@@ -494,7 +494,7 @@ footer p {
         width: 90%;
     }
     .btn {
-        margin-left: 25%;
+        margin-left: 35%;
     }
 }
 @media screen and (max-width: 450px) {
@@ -502,5 +502,10 @@ footer p {
         font-size: 2rem;
         padding: 10px;
         word-break: break-all;
+    }
+}
+@media screen and (max-width: 390px) {
+    .btn {
+        margin-left: 26%;
     }
 }
