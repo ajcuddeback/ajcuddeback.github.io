@@ -293,13 +293,15 @@ header nav ul li a {
 
 /* Contact Me Section */
 .contact-wrapper {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input[type=text], textarea {
-    width: 500px;
+    width: 1000px;
     padding: 12px 20px;
     margin: 8px 0;
     display: block;
@@ -308,7 +310,7 @@ input[type=text], textarea {
     box-sizing: border-box;
 }
 button[type=submit] {
-    width: 100%;
+    width: 1000px;
   background-color: var(--blue);
   color: white;
   padding: 14px 20px;
@@ -337,11 +339,15 @@ footer {
 footer p {
     font-size: 25px;
 }
-
-/* Media Querry for small laptops/ Ipad pro */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1350px) {
     .intro h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+    }
+}
+/* Media Querry for small laptops/ Ipad pro */
+@media screen and (max-width: 1100px) {
+    .intro h1 {
+        font-size: 1.4rem;
     }
     .blocking {
         height: 1.9rem;
@@ -388,23 +394,23 @@ footer p {
     .about-content-wrapper img {
         box-shadow: 2px 2px 15px 2px var(--blue);
     }
+    input[type=text], textarea {
+        width: 700px;
+        }
+    button[type=submit] {
+        width: 700px;
+    }
 }
 
 /* Media Querry for phones */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 850px) {
     .intro h1 {
         font-size: 1.1rem;
     }
     .about-content-wrapper h3 {
         font-size: 15px;
     }
-    .contact-wrapper {
-        width: 60%;
-        margin-left: 20%;
-    }
-    input[type=text], textarea {
-    width: 300px;
-    }
+    
     header nav ul li a {
         padding: 3px 8px;
         font-size: 1.2rem;
@@ -437,12 +443,11 @@ footer p {
         margin-right: 25%;
         margin-bottom: 10px;
     }
-    .contact-wrapper {
-        width: 60%;
-        margin-left: 20%;
-    }
     input[type=text], textarea {
-    width: 200px;
+        width: 400px;
+        }
+    button[type=submit] {
+        width: 400px;
     }
     footer {
         padding: 25px;
@@ -453,9 +458,23 @@ footer p {
     }
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .intro h1 {
-        font-size: .8rem;
+        font-size: 1.5rem;
+    }
+    .blocking {
+        height: 3.3rem;
+    }
+    @keyframes headingUp {
+        from{
+            top: 45vh;
+        }
+        to {
+            top: 35vh;
+        }
+    }
+    .intro h1 span {
+        display: block;
     }
     .blocking {
         width: 455px;
@@ -467,7 +486,7 @@ footer p {
 /* Media Querry for iphone 6 and smaller devices */
 @media screen and (max-width: 412px) {
     .intro h1 {
-        font-size: .7rem;
+        font-size: 1.25rem;
     }
     header h1 {
         font-size: 40px;
@@ -487,5 +506,11 @@ footer p {
         font-size: 2rem;
         padding: 10px;
         word-break: break-all;
+    }
+    input[type=text], textarea {
+        width: 260px;
+        }
+    button[type=submit] {
+        width: 260px;
     }
 }
