@@ -39,13 +39,13 @@ Particle.prototype.update = function () {
 //create particle array
 function init() {
     particleArray = [];
-    for (let i = 0; i < 900; i++) {
+    for (let i = 0; i < 500; i++) {
         let radius = Math.random() * 2.3;
         let x = Math.random() * (innerWidth - radius * 2);
         let y = Math.random() * (innerHeight - radius * 2);
         let directionX = (Math.random() * .4) - .2;
         let directionY = (Math.random() * .4) - .2;
-        let color = '#43d3fe';
+        let color = 'rgba(0,123,255, .7)';
 
         particleArray.push(new Particle(x, y, directionX, directionY, radius, color))
     }
