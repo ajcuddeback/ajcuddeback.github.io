@@ -67,9 +67,3 @@ window.addEventListener('resize', function () {
     canvas.height = innerHeight;
     init();
 })
-downBtn.addEventListener("click", function () {
-    scrollTo({
-        top: 1000,
-        behavior: "smooth"
-    })
-})

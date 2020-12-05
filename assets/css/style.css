@@ -21,7 +21,7 @@ html {
 }
 body {
     background-color: var(--background);
-    color: var(--blue);
+    color: var(--neon-blue);
 }
 /* Hides any overflow */
 main {
@@ -146,12 +146,12 @@ header h1 {
 /*Navigation*/
 header a {
     text-decoration: none;
-    color: var(--blue);
+    color: var(--neon-blue);
 }
 header a:hover {
     box-shadow: 2px 2px 15px 1px var(--blue);
     transition: 1s;
-    color: var(--blue)
+    color: var(--neon-blue)
 } 
 header nav ul {
     margin-top: 23px;
@@ -255,12 +255,13 @@ header nav ul li a {
 .works div p {
     font-size: 20px;
     text-decoration: none;
-    color: var(--blue);
+    color: var(--neon-blue);
     background-color: var(--background);
     padding: 10px;
     border-radius: 5px;
 }
 .main-work div p {
+    color: var(--neon-blue);
     font-size: 30px;
     width: 100%;
 }
