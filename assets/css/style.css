@@ -483,10 +483,23 @@ footer p {
         font-size: 10px;
     }
 }
+@media screen and (max-width: 450px) {
+    .my-name > h1 {
+        font-size: 2rem;
+        padding: 10px;
+        word-break: break-all;
+    }
+    input[type=text], textarea {
+        width: 260px;
+        }
+    button[type=submit] {
+        width: 260px;
+    }
+}
 /* Media Querry for iphone 6 and smaller devices */
 @media screen and (max-width: 412px) {
     .intro h1 {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
     }
     header h1 {
         font-size: 40px;
@@ -501,16 +514,4 @@ footer p {
         max-width: 50%;
     } */
 }
-@media screen and (max-width: 450px) {
-    .my-name > h1 {
-        font-size: 2rem;
-        padding: 10px;
-        word-break: break-all;
-    }
-    input[type=text], textarea {
-        width: 260px;
-        }
-    button[type=submit] {
-        width: 260px;
-    }
-}
+
