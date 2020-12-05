@@ -353,7 +353,7 @@ footer p {
         height: 1.9rem;
         width: 1000px;
     }
-    header{
+    header {
         justify-content: center;
     }
     .main-titles {
@@ -383,7 +383,6 @@ footer p {
     .sub-work2 {
         width: 100%;
         grid-column: 1 / span 3;
-        background-size: cover;
     }
     .sub-work3 {
         width: 100%;
@@ -449,10 +448,6 @@ footer p {
     button[type=submit] {
         width: 400px;
     }
-    footer {
-        padding: 25px;
-        text-align: center;
-    }
     footer p {
         font-size: 15px;
     }
@@ -473,6 +468,9 @@ footer p {
             top: 35vh;
         }
     }
+    .sub-work1 {
+        background-position: center;
+    }
     .intro h1 span {
         display: block;
     }
@@ -484,11 +482,6 @@ footer p {
     }
 }
 @media screen and (max-width: 450px) {
-    .my-name > h1 {
-        font-size: 2rem;
-        padding: 10px;
-        word-break: break-all;
-    }
     input[type=text], textarea {
         width: 260px;
         }
@@ -509,9 +502,5 @@ footer p {
         padding: 4px 8px;
         font-size: .83rem;
     }
-
-    /* .download-button-wrapper {
-        max-width: 50%;
-    } */
 }
 
