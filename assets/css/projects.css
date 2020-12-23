@@ -7,41 +7,55 @@
 main {
   width: 100%;
   display: flex;
-  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  width: 80%;
 }
-
+a {
+  width: 6vh;
+  height: 6vh;
+  margin-bottom: 3vh;
+}
 i {
   font-size: 45px;
+  pointer-events: none;
+}
+i:hover {
+  cursor: pointer;
 }
 
 .description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 60rem;
-  padding-left: 20rem;
+  flex-basis: 40rem;
   position: relative;
   margin-right: 5rem;
 }
 
 .description h1 {
   font-size: 48px;
+  margin-bottom: 5vh;
 }
 
 .description p {
   font-size: 24px;
-  padding-bottom: 10vh;
+  padding-bottom: 3vh;
 }
 .description i {
-  padding-bottom: 4vh;
+  padding-bottom: 10vh;
+}
+.description li {
+  margin-bottom: 1vh;
+  font-size: 20px;
 }
 
 .image {
-  width: 30vh;
   position: relative;
-  flex-basis: 60rem;
+  flex: 1;
+  flex-basis: 15rem;
   overflow: hidden;
-  padding-right: 20rem;
 }
 .image img {
   width: 100%;
