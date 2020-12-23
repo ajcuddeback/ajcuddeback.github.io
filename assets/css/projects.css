@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+i {
+  font-size: 45px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 60rem;
+  padding-left: 20rem;
+  position: relative;
+  margin-right: 5rem;
+}
+
+.description h1 {
+  font-size: 48px;
+}
+
+.description p {
+  font-size: 24px;
+  padding-bottom: 10vh;
+}
+.description i {
+  padding-bottom: 4vh;
+}
+
+.image {
+  width: 30vh;
+  position: relative;
+  flex-basis: 60rem;
+  overflow: hidden;
+  padding-right: 20rem;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
