@@ -12,6 +12,48 @@ main {
   margin: 0 auto 0 auto;
   width: 80%;
 }
+.back-wrapper {
+  display: flex;
+  align-items: center;
+}
+.back-wrapper button {
+  background-color: black;
+  color: #43d3fe;
+  border: none;
+  width: 70px;
+  height: 70px;
+  border: 0 !important;
+  outline: black !important;
+}
+.back-wrapper button:hover {
+  animation: pointerButton 1s ease-in-out;
+}
+.back-wrapper button:focus .back-wrapper button::-moz-focus-inner {
+  border: 0 !important;
+  outline: black !important;
+}
+@keyframes pointerButton {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.back-wrapper p {
+  margin-left: 1rem;
+  padding-top: 10px;
+}
 
 a {
   margin-bottom: 3vh;
