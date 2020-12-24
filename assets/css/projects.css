@@ -12,14 +12,19 @@ main {
   margin: 0 auto 0 auto;
   width: 80%;
 }
+
 a {
-  width: 6vh;
-  height: 6vh;
   margin-bottom: 3vh;
+  text-decoration: none;
+  color: #43d3fe;
+  transition: all 0.5s ease;
+  margin-right: 1rem;
+}
+a:hover {
+  color: #43fef5;
 }
 i {
   font-size: 45px;
-  pointer-events: none;
 }
 i:hover {
   cursor: pointer;
