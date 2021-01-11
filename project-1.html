@@ -11,42 +11,55 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/projects.css">
 </head>
 
-<body>
-    <header>
-        <div class="back-wrapper">
-            <button><i class="fas fa-hand-point-left"></i></button>
+<body data-barba="wrapper">
+    <div class="main" data-barba="container" data-barba-namespace="projects">
+
+        <div class=" back-wrapper">
+            <a href="./index.html"><i class="fas fa-hand-point-left"></i></a>
             <p>Back to home</p>
         </div>
-    </header>
-    <main>
-        <div class="description">
-            <h1>Explore Outdoors</h1>
-            <div class="links">
-                <a href="https://github.com/ajcuddeback/Explore-Outdoors" target="_blank"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://ajcuddeback.github.io/Explore-Outdoors" target="_blank"><i class="fas fa-link"></i></a>
+
+        <main class="desc-main">
+            <div class="description">
+                <h1>Explore Outdoors</h1>
+                <div class="links">
+                    <a href="https://github.com/ajcuddeback/Explore-Outdoors" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://ajcuddeback.github.io/Explore-Outdoors" target="_blank"><i
+                            class="fas fa-link"></i></a>
+                </div>
+                <p>Explore Outdoors is a group project done with UCF's Coding Bootcamp. Explore Outdoors is your one
+                    stop
+                    website to find the perfect destination for your next vacation when you can't decide where to go.
+                    Take
+                    our 12 question test and find the perfect destination based on six beautiful places we hand picked
+                    for
+                    you! </p>
+                <p>Contributors include:
+                <ul>
+                    <li>Austin Cuddeback (Animations/UI/UX)</li>
+                    <li>Irina Skitayeva (HTML/Content Creation)</li>
+                    <li>Jephte Borno (JavaScript/API's)</li>
+                    <li>Jasmine Akbari (CSS/Materialize)</li>
+                </ul>
+                </p>
             </div>
-            <p>Explore Outdoors is a group project done with UCF's Coding Bootcamp. Explore Outdoors is your one stop
-                website to find the perfect destination for your next vacation when you can't decide where to go. Take
-                our 12 question test and find the perfect destination based on six beautiful places we hand picked for
-                you! </p>
-            <p>Contributors include:
-            <ul>
-                <li>Austin Cuddeback (Animations/UI/UX)</li>
-                <li>Irina Skitayeva (HTML/Content Creation)</li>
-                <li>Jephte Borno (JavaScript/API's)</li>
-                <li>Jasmine Akbari (CSS/Materialize)</li>
-            </ul>
-            </p>
-        </div>
-        <div class="image">
-            <img src="./assets/Images/explore-outdoors.png" alt="">
-        </div>
-    </main>
-    <script src="" async defer></script>
+            <div class="image">
+                <img src="./assets/Images/explore-outdoors.png" alt="">
+            </div>
+        </main>
+    </div>
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="./assets/scripts/projects.js" async defer></script>
 </body>
 
 </html>

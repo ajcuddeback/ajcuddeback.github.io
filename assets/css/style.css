@@ -20,14 +20,142 @@ html {
   --neon-blue: #43d3fe;
 }
 body {
+  position: relative;
   background-color: var(--background);
   color: var(--neon-blue);
 }
 /* Hides any overflow */
-main {
+.home-main {
+  position: absolute;
   overflow: hidden;
 }
-/* Intro animation */
+.back-wrapper {
+  display: flex;
+  align-items: center;
+}
+.back-wrapper a {
+  background-color: black;
+  color: #43d3fe;
+  border: none;
+  /* width: 70px;
+  height: 70px; */
+  border: 0 !important;
+  outline: black !important;
+}
+.back-wrapper a:hover {
+  animation: pointerButton 1s ease-in-out;
+}
+.back-wrapper a:focus .back-wrapper a::-moz-focus-inner {
+  border: 0 !important;
+  outline: black !important;
+}
+@keyframes pointerButton {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.back-wrapper p {
+  margin-left: 1rem;
+  padding-top: 10px;
+}
+
+.links a {
+  margin-bottom: 3vh;
+  text-decoration: none;
+  color: #43d3fe;
+  transition: all 0.5s ease;
+  margin-right: 1rem;
+}
+.links a:hover {
+  color: #43fef5;
+}
+i {
+  font-size: 45px;
+}
+i:hover {
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 40rem;
+  position: relative;
+  margin-right: 5rem;
+}
+.desc-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  width: 80%;
+}
+
+.description h1 {
+  font-size: 48px;
+  margin-bottom: 5vh;
+}
+
+.description p {
+  font-size: 24px;
+  padding-bottom: 3vh;
+}
+.description i {
+  padding-bottom: 10vh;
+}
+.description li {
+  margin-bottom: 1vh;
+  font-size: 20px;
+}
+
+.image {
+  position: relative;
+  flex: 1;
+  flex-basis: 15rem;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+.swipe1 {
+  background: rgb(167, 110, 231);
+  z-index: 5;
+}
+.swipe2 {
+  background: rgb(86, 124, 228);
+  z-index: 4;
+}
+.swipe3 {
+  background: rgb(255, 139, 93);
+  z-index: 3;
+}
+
+/* Intro animation
 #canvas1 {
   position: fixed;
   width: 100%;
@@ -93,10 +221,10 @@ main {
 }
 
 /* Main Content pushed to back */
-.main-content {
+/* .main-content {
   position: absolute;
   z-index: -1;
-}
+} */
 
 /* header */
 header {

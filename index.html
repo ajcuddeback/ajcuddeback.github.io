@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <main>
-        <div class="intro">
+<body data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="home" class="home-main">
+        <!-- <div class="intro">
             <canvas id='canvas1'></canvas>
             <h1>Hello, my name is Austin Cuddeback, <span>and I am a Front-End Web Developer</span></h1>
             <div class="blocking"></div>
-        </div>
+        </div> -->
         <div class="main-content">
             <!--Header-->
             <header>
@@ -90,8 +90,7 @@
                     </div>
                     <div class="grid-wrapper">
                         <div class="grid-content">
-                            <a href="https://ajcuddeback.github.io/Explore-Outdoors" target="_blank"
-                                class="works main-work">
+                            <a href="./project-1.html" class="works main-work">
                                 <div>
                                     <p class="Coding-Quiz">Explore Outdoors</p>
                                 </div>
@@ -236,11 +235,16 @@
             <span class="cursor"></span>
         </div>
     </main>
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://kit.fontawesome.com/c9e0389f8f.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="./assets/scripts/projects.js" async defer></script>
     <script src="intro.js" async defer></script>
 </body>
 
