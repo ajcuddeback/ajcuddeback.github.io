@@ -300,10 +300,10 @@ header nav ul li a {
   background-position: center;
 }
 .sub-work6 {
-  background-image: url("../Images/pw.png");
+  background-image: url("../Images/note-taker.png");
   width: 70%;
   background-size: cover;
-  background-position: center;
+  background-position: unset;
 }
 
 /* Contact Me Section */
