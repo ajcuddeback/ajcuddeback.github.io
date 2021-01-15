@@ -269,9 +269,9 @@ header nav ul li a {
   background-size: cover;
 }
 .sub-work1 {
-  background-image: url("../Images/screencapture-127-0-0-1-5501-index-html-2020-11-06-18_28_47.png");
+  background-image: url("../Images/home-img-prev.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   width: 70%;
 }
 .sub-work2 {
@@ -403,7 +403,7 @@ footer p {
     width: 100%;
     grid-column: 1 / span 3;
     background-size: cover;
-    background-position: inherit;
+    background-position: top;
   }
   .sub-work2 {
     width: 100%;
@@ -516,7 +516,7 @@ footer p {
     }
   }
   .sub-work1 {
-    background-position: center;
+    background-position: top;
   }
   .intro h1 span {
     display: block;
