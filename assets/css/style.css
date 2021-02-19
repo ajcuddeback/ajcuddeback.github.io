@@ -265,7 +265,7 @@ header nav ul li a {
 .main-work {
   width: 100%;
   grid-column: 1 / span 3;
-  background-image: url("../Images/explore-outdoors.png");
+  background-image: url("../Images/dev-connect.png");
   background-size: cover;
 }
 .sub-work1 {
@@ -275,7 +275,7 @@ header nav ul li a {
   width: 70%;
 }
 .sub-work2 {
-  background-image: url("../Images/weather-app.png");
+  background-image: url("../Images/explore-outdoors.png");
   background-size: cover;
   background-position: center;
 
